@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+
+<shapes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+xsi:noNamespaceSchemaLocation="shapes.xsd">
+
+<settings id="simulationSettings">
+<delta-t  t="0.0005"  />
+
+<end-time t="20.0"   />
+
+<factor val="0.1"/>
+  
+<domain-size x="180.0" y="90.0" z="0.0" />
+
+<rcutoff  val="3.0"            />
+
+<x1-boundary-condition val="outflow" />
+
+<x2-boundary-condition val="outflow" />
+
+<y1-boundary-condition val="outflow" />
+
+<y2-boundary-condition val="outflow" />
+
+<z1-boundary-condition val="outflow"/>
+
+<z2-boundary-condition val="outflow"/>
+	
+<brownian-motion bol="true" />
+
+<initial-temperature val="0.5" />
+
+<n-thermostat t="1000.0" />
+
+<target-temperature val="0.5" />
+
+		<temperature-difference val="0.0" />
+
+		<gravitation val="0" />
+	
+</settings>
+<checkpoint id="checkpointSettings">
+	
+<write-checkpoint bol="true" />
+
+		<read-checkpoint  bol="false" />
+
+		<write-checkpoint-time t="15.0" />
+
+	</checkpoint>
+<cuboid id="object1">
+	<type val="1"/>
+	<c-epsilon val="5.0"/>
+	<c-sigma val="1.0"/>
+	<right-top-point x="20" y="20" z="0"/>
+	<side-lengths x="100" y="20" z="1"/>
+	<velocity x="0.0" y="0.0" z="0.0"/>
+	<mass val="1.0"/>
+	<h val="1.1225"/>
+</cuboid>
+	<cuboid id="object2">
+		<type val="2"/>
+		<c-epsilon val="5.0"/>
+		<c-sigma val="1.0"/>
+		<right-top-point x="70" y="60" z="0"/>
+		<side-lengths x="20" y="20" z="1"/>
+		<velocity x="0.0" y="-10.0" z="0.0"/>
+		<mass val="1.0"/>
+		<h val="1.1225"/>
+	</cuboid>
+
+
+
+</shapes>

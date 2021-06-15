@@ -1,0 +1,103 @@
+\hypertarget{classparticle_generator2}{}\section{particle\+Generator2 Class Reference}
+\label{classparticle_generator2}\index{particle\+Generator2@{particle\+Generator2}}
+
+
+{\ttfamily \#include $<$particle\+Generator2.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparticle_generator2_a1a1909e3af6ad6b8e3b7a1dc6bfeb201}{particle\+Generator2}} (bool o, utils\+::\+Vector$<$ double, 3 $>$ d, double r, bool f)
+\item 
+int \& \mbox{\hyperlink{classparticle_generator2_a6f52594c50e9b4d40f6641bf79539476}{create\+Mesh}} (std\+::list$<$ Particle $>$ \&particles, double sigma, double epsilon)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classparticle_generator2_abfcd95d4210dfc36b18de468bb65293c}{radius}}
+\item 
+bool \mbox{\hyperlink{classparticle_generator2_a943e9f09126b5ce9ad13ef102fec8801}{outflow}}
+\item 
+double \mbox{\hyperlink{classparticle_generator2_a98dff9bc126027bc1720259427b453d5}{x}}
+\item 
+double \mbox{\hyperlink{classparticle_generator2_a05750f354589de71bb15c6f060145a99}{y}}
+\item 
+double \mbox{\hyperlink{classparticle_generator2_a3eec5d7fc847bac45ec9daf44363b462}{z}}
+\item 
+bool \mbox{\hyperlink{classparticle_generator2_a121ae00704e381b240f3d850a85bf1ac}{mbd}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classparticle_generator2_a1a1909e3af6ad6b8e3b7a1dc6bfeb201}\label{classparticle_generator2_a1a1909e3af6ad6b8e3b7a1dc6bfeb201}} 
+\index{particle\+Generator2@{particle\+Generator2}!particle\+Generator2@{particle\+Generator2}}
+\index{particle\+Generator2@{particle\+Generator2}!particle\+Generator2@{particle\+Generator2}}
+\subsubsection{\texorpdfstring{particle\+Generator2()}{particleGenerator2()}}
+{\footnotesize\ttfamily particle\+Generator2\+::particle\+Generator2 (\begin{DoxyParamCaption}\item[{bool}]{o,  }\item[{utils\+::\+Vector$<$ double, 3 $>$}]{d,  }\item[{double}]{r,  }\item[{bool}]{f }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classparticle_generator2_a6f52594c50e9b4d40f6641bf79539476}\label{classparticle_generator2_a6f52594c50e9b4d40f6641bf79539476}} 
+\index{particle\+Generator2@{particle\+Generator2}!create\+Mesh@{create\+Mesh}}
+\index{create\+Mesh@{create\+Mesh}!particle\+Generator2@{particle\+Generator2}}
+\subsubsection{\texorpdfstring{create\+Mesh()}{createMesh()}}
+{\footnotesize\ttfamily int \& particle\+Generator2\+::create\+Mesh (\begin{DoxyParamCaption}\item[{std\+::list$<$ Particle $>$ \&}]{particles,  }\item[{double}]{sigma,  }\item[{double}]{epsilon }\end{DoxyParamCaption})}
+
+created a vector, which contains molecule objects 3d/2d structure is arranged in 1d array, simple hash fct is used to determine cell, where a particle must be placed there are no halo cells, if a particle is outside the domain, it will be deleted from the particle-\/list, and won\textquotesingle{}t be placed into the vector of molecules 
+\begin{DoxyParams}{Parameters}
+{\em particles} & \\
+\hline
+{\em sigma} & \\
+\hline
+{\em epsilon} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classparticle_generator2_a121ae00704e381b240f3d850a85bf1ac}\label{classparticle_generator2_a121ae00704e381b240f3d850a85bf1ac}} 
+\index{particle\+Generator2@{particle\+Generator2}!mbd@{mbd}}
+\index{mbd@{mbd}!particle\+Generator2@{particle\+Generator2}}
+\subsubsection{\texorpdfstring{mbd}{mbd}}
+{\footnotesize\ttfamily bool particle\+Generator2\+::mbd}
+
+\mbox{\Hypertarget{classparticle_generator2_a943e9f09126b5ce9ad13ef102fec8801}\label{classparticle_generator2_a943e9f09126b5ce9ad13ef102fec8801}} 
+\index{particle\+Generator2@{particle\+Generator2}!outflow@{outflow}}
+\index{outflow@{outflow}!particle\+Generator2@{particle\+Generator2}}
+\subsubsection{\texorpdfstring{outflow}{outflow}}
+{\footnotesize\ttfamily bool particle\+Generator2\+::outflow}
+
+\mbox{\Hypertarget{classparticle_generator2_abfcd95d4210dfc36b18de468bb65293c}\label{classparticle_generator2_abfcd95d4210dfc36b18de468bb65293c}} 
+\index{particle\+Generator2@{particle\+Generator2}!radius@{radius}}
+\index{radius@{radius}!particle\+Generator2@{particle\+Generator2}}
+\subsubsection{\texorpdfstring{radius}{radius}}
+{\footnotesize\ttfamily double particle\+Generator2\+::radius}
+
+\mbox{\Hypertarget{classparticle_generator2_a98dff9bc126027bc1720259427b453d5}\label{classparticle_generator2_a98dff9bc126027bc1720259427b453d5}} 
+\index{particle\+Generator2@{particle\+Generator2}!x@{x}}
+\index{x@{x}!particle\+Generator2@{particle\+Generator2}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily double particle\+Generator2\+::x}
+
+\mbox{\Hypertarget{classparticle_generator2_a05750f354589de71bb15c6f060145a99}\label{classparticle_generator2_a05750f354589de71bb15c6f060145a99}} 
+\index{particle\+Generator2@{particle\+Generator2}!y@{y}}
+\index{y@{y}!particle\+Generator2@{particle\+Generator2}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily double particle\+Generator2\+::y}
+
+\mbox{\Hypertarget{classparticle_generator2_a3eec5d7fc847bac45ec9daf44363b462}\label{classparticle_generator2_a3eec5d7fc847bac45ec9daf44363b462}} 
+\index{particle\+Generator2@{particle\+Generator2}!z@{z}}
+\index{z@{z}!particle\+Generator2@{particle\+Generator2}}
+\subsubsection{\texorpdfstring{z}{z}}
+{\footnotesize\ttfamily double particle\+Generator2\+::z}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{particle_generator2_8h}{particle\+Generator2.\+h}}\item 
+\mbox{\hyperlink{particle_generator2_01_071_08_8cpp}{particle\+Generator2 (1).\+cpp}}\end{DoxyCompactItemize}

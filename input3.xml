@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+
+<shapes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+xsi:noNamespaceSchemaLocation="shapes.xsd">
+
+<settings id="simulationSettings">
+<delta-t  t="0.0005"  />
+
+<end-time t="40.0"   />
+
+<factor val="0.1"/>
+  
+<domain-size x="303.0" y="180.0" z="0.0" />
+
+<rcutoff  val="3.0"            />
+   
+<horizontal-boundary-condition val="reflecting" />
+
+<vertical-boundary-condition val="reflecting" />
+	
+<brownian-motion bol="true" />
+
+<initial-temperature val="0.5" />
+
+<n-thermostat t="0.0" />
+
+<target-temperature val="0.5" />
+
+		<temperature-difference val="0.0" />
+
+		<gravitation val="-12.44" />
+	
+</settings>
+<checkpoint id="checkpointSettings">
+	
+<write-checkpoint bol="false" />
+
+		<read-checkpoint  bol="true" />
+
+		<write-checkpoint-time t="0.0" />
+
+	</checkpoint>
+
+<sphere id="sphere1">
+	
+	<s-epsilon val="1.0"                      />
+
+		<s-sigma val="1.2"                        />
+
+		<centre   x="150.0" y="150.0" z="0.0"        />
+
+		<radius   val="20.0"                       />
+
+		<velocity x="0.0" y="0.0" z="0.0"         />
+
+		<mass 	  val="1.0" 	                  />
+		
+<h		  val="1.2"                     />
+
+	</sphere>
+
+</shapes>

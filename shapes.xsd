@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="shapes" type="shapesType"/>
+  <xs:complexType name="delta-tType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="t"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="end-timeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="t"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="factorType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="val"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="domain-sizeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="x"/>
+        <xs:attribute type="xs:string" name="y"/>
+        <xs:attribute type="xs:string" name="z"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="rcutoffType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="val"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="x1-boundary-conditionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="val"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="x2-boundary-conditionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="val"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="y1-boundary-conditionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="val"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="y2-boundary-conditionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="val"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="z1-boundary-conditionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="val"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="z2-boundary-conditionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="val"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="brownian-motionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="bol"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="initial-temperatureType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="val"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="n-thermostatType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="t"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="target-temperatureType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="val"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="temperature-differenceType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="val"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="gravitationType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="val"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="r0Type">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="val"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="kType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="val"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="fz-upType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="val"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="parallelisation-methodType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="val"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="force-calculation-methodType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="val"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="rlType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="val"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="settingsType">
+    <xs:sequence>
+      <xs:element type="delta-tType" name="delta-t"/>
+      <xs:element type="end-timeType" name="end-time"/>
+      <xs:element type="factorType" name="factor"/>
+      <xs:element type="domain-sizeType" name="domain-size"/>
+      <xs:element type="rcutoffType" name="rcutoff"/>
+      <xs:element type="x1-boundary-conditionType" name="x1-boundary-condition"/>
+      <xs:element type="x2-boundary-conditionType" name="x2-boundary-condition"/>
+      <xs:element type="y1-boundary-conditionType" name="y1-boundary-condition"/>
+      <xs:element type="y2-boundary-conditionType" name="y2-boundary-condition"/>
+      <xs:element type="z1-boundary-conditionType" name="z1-boundary-condition"/>
+      <xs:element type="z2-boundary-conditionType" name="z2-boundary-condition"/>
+      <xs:element type="brownian-motionType" name="brownian-motion"/>
+      <xs:element type="initial-temperatureType" name="initial-temperature"/>
+      <xs:element type="n-thermostatType" name="n-thermostat"/>
+      <xs:element type="target-temperatureType" name="target-temperature"/>
+      <xs:element type="temperature-differenceType" name="temperature-difference"/>
+      <xs:element type="gravitationType" name="gravitation"/>
+      <xs:element type="r0Type" name="r0"/>
+      <xs:element type="kType" name="k"/>
+      <xs:element type="fz-upType" name="fz-up"/>
+      <xs:element type="parallelisation-methodType" name="parallelisation-method"/>
+      <xs:element type="force-calculation-methodType" name="force-calculation-method"/>
+      <xs:element type="rlType" name="rl"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id"/>
+  </xs:complexType>
+  <xs:complexType name="write-checkpointType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="bol"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="read-checkpointType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="bol"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="write-checkpoint-timeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="t"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="checkpointType">
+    <xs:sequence>
+      <xs:element type="write-checkpointType" name="write-checkpoint"/>
+      <xs:element type="read-checkpointType" name="read-checkpoint"/>
+      <xs:element type="write-checkpoint-timeType" name="write-checkpoint-time"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id"/>
+  </xs:complexType>
+  <xs:complexType name="typeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="val" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="epsilonType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="val" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="sigmaType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="val" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="centreType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="x"/>
+        <xs:attribute type="xs:string" name="y"/>
+        <xs:attribute type="xs:string" name="z"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="radiusType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="val"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="velocityType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="x" use="optional"/>
+        <xs:attribute type="xs:string" name="y" use="optional"/>
+        <xs:attribute type="xs:string" name="z" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="massType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="val" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="hType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="val" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="sphereType">
+    <xs:sequence>
+      <xs:element type="typeType" name="type"/>
+      <xs:element type="epsilonType" name="epsilon"/>
+      <xs:element type="sigmaType" name="sigma"/>
+      <xs:element type="centreType" name="centre"/>
+      <xs:element type="radiusType" name="radius"/>
+      <xs:element type="velocityType" name="velocity"/>
+      <xs:element type="massType" name="mass"/>
+      <xs:element type="hType" name="h"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id"/>
+  </xs:complexType>
+  <xs:complexType name="right-top-pointType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="x" use="optional"/>
+        <xs:attribute type="xs:string" name="y" use="optional"/>
+        <xs:attribute type="xs:string" name="z" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="side-lengthsType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="x" use="optional"/>
+        <xs:attribute type="xs:string" name="y" use="optional"/>
+        <xs:attribute type="xs:string" name="z" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="membraneType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="bol" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="cuboidType">
+    <xs:sequence>
+      <xs:element type="typeType" name="type"/>
+      <xs:element type="epsilonType" name="epsilon"/>
+      <xs:element type="sigmaType" name="sigma"/>
+      <xs:element type="right-top-pointType" name="right-top-point"/>
+      <xs:element type="side-lengthsType" name="side-lengths"/>
+      <xs:element type="velocityType" name="velocity"/>
+      <xs:element type="massType" name="mass"/>
+      <xs:element type="hType" name="h"/>
+      <xs:element type="membraneType" name="membrane"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="shapesType">
+    <xs:sequence>
+      <xs:element type="settingsType" name="settings" minOccurs="1" maxOccurs="1"/>
+      <xs:element type="checkpointType" name="checkpoint" minOccurs="0" maxOccurs="1"/>
+      <xs:element type="sphereType" name="sphere" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element type="cuboidType" name="cuboid" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

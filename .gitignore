@@ -1,0 +1,4 @@
+*.xyz
+*.vtu
+cmake-build-debug
+.idea

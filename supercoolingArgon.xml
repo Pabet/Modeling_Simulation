@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<shapes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="shapes.xsd">
+	<settings id="simulationSettings">
+		<delta-t  t="0.001"  />
+		<end-time t="100.0"   />
+		<factor val="0.0"/>
+	        <domain-size x="9.2" y="9.2" z="9.2" />
+        	<rcutoff  val="2.3"            />
+		<x1-boundary-condition val="periodic"/>
+		<x2-boundary-condition val="periodic"   />
+		<y1-boundary-condition val="periodic"  />
+		<y2-boundary-condition val="periodic"  />
+		<z1-boundary-condition val="periodic"  />
+		<z2-boundary-condition val="periodic"  />
+		<brownian-motion bol="true" />
+		<initial-temperature val="3.0" />
+		<n-thermostat t="25.0" />
+		<target-temperature val="0.02" />
+		<temperature-difference val="2.5e-3" />
+		<gravitation val="0.0" />
+		<r0 val="0.0"/>
+		<k val="0.0"/>
+		<fz-up val="0.0" />
+		<parallelisation-method val = "sparse" />
+		<force-calculation-method  val = "Smoothed LJ"  />
+		<rl val="1.9"/>
+	</settings>
+
+	<checkpoint id="checkpointSettings">
+		<write-checkpoint bol="false" />
+		<read-checkpoint  bol="true" />
+		<write-checkpoint-time t="0.0" />
+	</checkpoint>
+</shapes>

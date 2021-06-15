@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<shapes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="shapes.xsd">
+	<settings id="simulationSettings">
+		<delta-t  t="0.001"  />
+		<end-time t="151.0"   />
+		<factor val="0.0"/>
+	        <domain-size x="9.2" y="9.2" z="9.2" />
+        	<rcutoff  val="2.3"            />
+		<x1-boundary-condition val="periodic"/>
+		<x2-boundary-condition val="periodic"   />
+		<y1-boundary-condition val="periodic"  />
+		<y2-boundary-condition val="periodic"  />
+		<z1-boundary-condition val="periodic"  />
+		<z2-boundary-condition val="periodic"  />
+		<brownian-motion bol="true" />
+		<initial-temperature val="0.01" />
+		<n-thermostat t="40.0" />
+		<target-temperature val="3.0" />
+		<temperature-difference val="0.001" />
+		<gravitation val="0.0" />
+		<r0 val="0.0"/>
+		<k val="0.0"/>
+		<fz-up val="0.0" />
+		<parallelisation-method val = "sparse" />
+		<force-calculation-method  val = "Smoothed LJ"  />
+		<rl val="1.9"/>
+	</settings>
+
+	<checkpoint id="checkpointSettings">
+		<write-checkpoint bol="true" />
+		<read-checkpoint  bol="false" />
+		<write-checkpoint-time t="150.0" />
+	</checkpoint>
+
+	<cuboid id="liquid1">
+		<type    val="1.0" />
+		<epsilon val="1.0"/>
+		<sigma   val="1.0"/>
+		<right-top-point   x="0.575" y="0.575" z="0.575"        />
+		<side-lengths      x="8.0" y="8.0" z="8.0"               />
+		<velocity 	   x="0.0" y="0.0" z="0.0"         />
+		<mass 	  val="1.0" 	                  />
+		<h	  val="1.15"                     />
+		<membrane bol="false" />
+	</cuboid>
+
+</shapes>
